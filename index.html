@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta
+    name="description"           
+    content="showcase website built from scratch in order to get better at web development and web design, using HTML, Sass and Javascript" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./app/public/favicon-32x32.png">
+  <link rel="stylesheet" href="./app/css/styles.css">
+  
+  <title>Easybank</title>
+</head>
+<body>
+
+  <header id="header" class="header">
+    <a href="#header" class="logo">
+      <img class="logo__img--header" src="./app/images/logo/logo.svg" alt="easybank logo"/>
+    </a>
+    <ul id="menu" class="menu">
+      <li class="menu__link"><a href="#header">Home</a></li>
+      <li class="menu__link"><a href="#header">About</a></li>
+      <li class="menu__link"><a href="#header">Contact</a></li>
+      <li class="menu__link"><a href="#header">Blog</a></li>
+      <li class="menu__link"><a href="#header">Careers</a></li>
+    </ul>
+    <button class="btn btn--request-invite header__btn">Request Invite</button>
+    <div id="hamburger" class="hamburger"></div>
+  </header>
+
+  <div id="small-device-menu-bg" class="small-device-menu-bg"></div>
+
+  <section class="home">
+    <div class="home__wrapper">
+      <div class="home__content">
+        <h1>Next generation digital banking</h1>
+        <p>
+          Take your financial life online. Your Easybank account will be a one-stop-shop 
+          for spending, saving, budgeting, investing, and much more.
+        </p>
+        <button class="btn home__btn btn--request-invite">Request Invite</button>
+      </div>
+      <div class="home__img-container">
+        <img class="home__img" src="./app/images/hero/image-mockups.png" alt="phones displaying the easybank mobile application"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about__heading fadein">
+      <h2>Why choose Easybank?</h2>
+      <p>
+        We leverage Open Banking to turn your bank account into your financial hub. Control 
+        your finances like never before.
+      </p>
+    </div>
+
+    <div class="cards-container cards-container--about">
+      <div class="card card--about fadein">
+        <img class="card__img card__img--about" src="./app/images/about/icon-online.svg" alt=""/>
+        <h3 class="card__title card__title--about">Online Banking</h3>
+        <p class="card__description card__description--about">
+          Our modern web and mobile applications allow you to keep track of your finances 
+          wherever you are in the world.
+        </p>
+      </div>
+      <div class="card card--about fadein">
+        <img class="card__img card__img--about" src="./app/images/about/icon-budgeting.svg" alt=""/>
+        <h3 class="card__title card__title--about">Simple Budgeting</h3>
+        <p class="card__description card__description--about">
+          See exactly where your money goes each month. Receive notifications when you’re 
+          close to hitting your limits.
+        </p>
+      </div>
+      <div class="card card--about fadein">
+        <img class="card__img card__img--about" src="./app/images/about/icon-onboarding.svg" alt=""/>
+        <h3 class="card__title card__title--about">Fast Onboarding</h3>
+        <p class="card__description card__description--about">
+          We don’t do branches. Open your account in minutes online and start taking control 
+          of your finances right away.
+        </p>
+      </div>
+      <div class="card card--about fadein">
+        <img class="card__img card__img--about" src="./app/images/about/icon-api.svg" alt=""/>
+        <h3 class="card__title card__title--about">Open API</h3>
+        <p class="card__description card__description--about">
+          Manage your savings, investments, pension, and much more from one account. Tracking 
+          your money has never been easier.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!--add links to wrap the cards content-->
+  <section id="blog" class="blog">
+    <h2 class="fadein">Latest Articles</h2>
+      
+      <div class="cards-container cards-container--blog">
+
+        <div class="card card--blog fadein">
+          <div class="blog-img-container">
+            <img class="card__img card__img--blog" data-src="./app/images/blog/image-currency.jpg" alt="currency"/>
+          </div>
+          <div class="blog-card-content-container">
+            <p class="card__author">By Claire Robinson</p>
+            <h3 class="card__title card__title--blog"><a href="#blog">Receive money in any currency with no fees</a></h3>
+            <p class="card__description card__description--blog">
+              The world is getting smaller and we’re becoming more mobile. So why should you be 
+              forced to only receive money in a single …
+            </p>
+          </div>
+        </div>
+
+        <div class="card card--blog fadein">
+          <div class="blog-img-container">
+            <img class="card__img card__img--blog" data-src="./app/images/blog/image-restaurant.jpg" alt="restaurant"/>
+          </div>
+          <div class="blog-card-content-container">
+            <p class="card__author">By Wilson Hutton</p>
+            <h3 class="card__title card__title--blog"><a href="#blog">Treat yourself without worrying about money</a></h3>
+            <p class="card__description card__description--blog">
+              Our simple budgeting feature allows you to separate out your spending and set 
+              realistic limits each month. That means you …
+            </p>
+          </div>
+        </div>
+
+        <div class="card card--blog fadein">
+          <div class="blog-img-container">
+            <img class="card__img card__img--blog" data-src="./app/images/blog/image-plane.jpg" alt="plane"/>
+          </div>
+          <div class="blog-card-content-container">
+            <p class="card__author">By Wilson Hutton</p>
+            <h3 class="card__title card__title--blog"><a href="#blog">Take your Easybank card wherever you go</a></h3>
+            <p class="card__description card__description--blog">
+              We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
+              while you’re abroad. We’ll even show you …
+            </p>
+          </div>
+        </div>
+
+        <div class="card card--blog fadein">
+          <div class="blog-img-container">
+            <img class="card__img card__img--blog" data-src="./app/images/blog/image-confetti.jpg" alt="confetti"/>
+          </div>
+          <div class="blog-card-content-container">
+            <p class="card__author">By Claire Robinson</p>
+            <h3 class="card__title card__title--blog"><a href="#blog">Our invite-only Beta accounts are now live!</a></h3>
+            <p class="card__description card__description--blog">
+              After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
+              It’s easy to request an invite through the site ...
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer id="footer" class="footer">
+    <div class="logo footer__logo logo--footer">
+      <img class="logo__img--footer" src="./app/images/logo/logo-white.svg" alt="easybank logo"/>
+    </div>
+    <ul class="social-media">
+      <li class="social-media__item">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer nofollow">
+          <div class="social-media__img"></div>
+        </a>
+      </li>
+      <li class="social-media__item">
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer nofollow">
+          <div class="social-media__img"></div>
+        </a>
+      </li>
+      <li class="social-media__item">
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer nofollow">
+          <div class="social-media__img"></div>
+        </a>
+      </li>
+      <li class="social-media__item">
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer nofollow">
+          <div class="social-media__img"></div>
+        </a>
+      </li>
+      <li class="social-media__item">
+        <a href="#">
+          <div href="https://www.instagram.com" target="_blank" rel="noopener noreferrer nofollow"></div>
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__links">
+      <li class="footer__link">About us<a href="#footer"></a></li>
+      <li class="footer__link">Contact<a href="#footer"></a></li>
+      <li class="footer__link">Blog<a href="#footer"></a></li>
+      <li class="footer__link">Careers<a href="#footer"></a></li>
+      <li class="footer__link">Support<a href="#footer"></a></li>
+      <li class="footer__link">Privacy Policy<a href="#footer"></a></li>
+    </ul>
+
+    <button class="btn btn--request-invite btn--footer footer__btn">Request Invite</button>
+    <p class="footer__corp">© Easybank. All Rights Reserved</p>
+  </footer>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://martineauremi.github.io/" target="_blank">Rémi Martineau</a>.
+  </div>
+
+  <script src="./app/js/menu.js"></script>
+  <script src="./app/js/lazyLoad.js"></script>
+</body>
+</html>

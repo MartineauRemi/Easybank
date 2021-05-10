@@ -1,0 +1,26 @@
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.875rem;
+    width: 100%;
+
+    &--blog{
+        margin: 0;
+    }
+
+    @media screen and (max-width: 1439px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 3.125rem;
+        column-gap: 3.125rem;
+        margin: auto;
+        
+        &--about, &--blog{
+            max-width: 50rem;
+        }
+    }
+
+    @media screen and (max-width: 767px){
+        grid-template-columns: 1fr;
+    }
+}
