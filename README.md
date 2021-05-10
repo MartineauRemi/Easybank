@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./app/public/Sreenshot-Easybank-Desktop-Design.jpg)
+![](./app/public/Sreenshot-Easybank-Desktop-Design.png)
 
 ### Links
 
