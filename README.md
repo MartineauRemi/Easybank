@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./app/public/Sreenshot-Easybank-Desktop-Design.jpg)
+![Easybank landing page](./app/public/Screenshot-Easybank-Desktop-Design.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/MartineauRemi/Easybanke](https://github.com/MartineauRemi/Easybank)
+- Live Site URL: [https://martineauremi.github.io/Easybank/](https://martineauremi.github.io/Easybank/)
 
 ## My process
 
