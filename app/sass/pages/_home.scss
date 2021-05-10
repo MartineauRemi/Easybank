@@ -1,0 +1,169 @@
+.home{
+    position: relative;
+    &::before{
+        content: "";
+        position:absolute;
+        background-image: url("/app/images/hero/bg-intro-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 93%;
+        width: 77rem;
+        height: 40.625rem;
+        background-size: 119%;
+        background-position: -166% 56%;
+        bottom: 0;
+        right: 0;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url("/app/images/hero/image-mockups.png");
+        background-repeat: no-repeat;
+        width: 45.75rem;
+        height: 56.25rem;
+        background-size: 104%;
+        background-position: -335% 332%;
+        right: 0;
+        bottom: -15.625rem;
+    }
+
+    &__wrapper{
+        width: 80%;
+        max-width: 1150px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__content{
+        flex: 2;
+        margin: 16.875rem 0 10.625rem 0;
+        h1{
+            margin-bottom: 1.5rem;
+        }
+    
+        p{
+            margin-bottom: 2.25rem;
+        }
+    }
+
+    &__img-container{
+        flex: 3;
+        position: relative;
+        min-height: 41rem;
+        height: 41rem;
+        max-height: 41rem;
+        width: 100%;
+        background-image: none;
+    }
+
+    &__img{
+        display: none;
+    }
+
+    &__btn{
+        z-index: 2;
+    }
+
+    @media screen and (max-width: 1439px){
+        padding: 0 0 5.5rem 0;
+
+        &::before, &::after{
+            background-image: none;
+        }
+
+        &__wrapper{
+            width: 90%;
+            flex-direction: column-reverse;
+            width: 100%;
+            max-width: none;
+        }
+    
+        &__content{
+            text-align: center;
+            margin: 0 1.5rem;
+            max-width: 40.625rem;
+        
+            h1{
+                margin-bottom: 1rem;
+            }
+    
+            p{
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__img-container{
+            background-image: url("/app/images/hero/bg-intro-mobile.svg");
+            background-repeat: no-repeat;
+            background-size: 100% 137%;
+            background-position: center;
+            min-height: 45rem;
+            height: 45rem;
+            max-height: 45rem;
+        }
+    
+        &__img{
+            display: block;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            margin: auto;
+    
+            width: 37.5rem;
+            height: 46.875rem;      
+            top: -3.75rem;
+        }
+    }
+
+    @media screen and (max-width: 1023px){
+        &__content{
+            margin: 0 1.5rem;
+            width: 29.6875rem;
+        }
+    
+        &__img-container{
+            height: 35rem;
+            min-height: 35rem;
+            max-height: 35rem;
+        }
+    
+        &__img{
+            width: 29.6875rem;
+            height: 34.375rem;      
+            top: -0.625rem;
+        }
+    }
+
+    @media screen and (max-width: 767px){
+        padding: 4.375rem 0;
+        &__content{
+            margin: 0 1.5rem;
+            width: auto;
+        }
+        &__img-container{
+            height: 21.625rem;
+            min-height: 21.625rem;
+            max-height: 21.625rem;
+        }
+        &__img{
+            width: 20.3125rem;
+            height: 25rem;      
+            top: -3.75rem;
+        }
+    }
+
+    @media screen and (max-width: 374px){
+        &__img-container{
+            height: 18.75rem;
+            min-height: 18.75rem;
+            max-height: 18.75rem;
+        }
+        
+        &__img{
+            width: 18.75rem;
+            min-height: 18.75rem;
+            max-height: 18.75rem;
+            top: -0.625rem;
+        }
+    }
+}

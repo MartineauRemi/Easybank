@@ -1,0 +1,179 @@
+.footer{
+    background-color: $dark-blue;
+    width: 100%;
+    padding: 3rem 10.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0.25rem;
+    row-gap: 1.25rem;
+    padding: 3.125rem 10.25rem;
+    grid-template-areas:
+        "logo links . button"
+        "socials links corp corp";
+
+    &__logo{
+        grid-area: logo;
+        align-self: start;
+        color: white;
+    }
+
+    &__links{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-area: links;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 100%;
+        align-self: stretch;
+    }
+
+    &__link{
+        color: $white;
+        cursor: pointer;
+
+        &:hover{
+            color: $lime-green;
+        }
+    }
+
+    &__btn{
+        grid-area: button;
+        align-self: start;
+        justify-self: end;
+    }
+
+    &__corp{
+        grid-area: corp;
+        align-self: center;
+        justify-self: end;
+    }
+
+    @media screen and (max-width: 1249px){
+        padding: 2.5rem 4.875rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 0.5fr);
+        grid-template-areas:
+            "logo"
+            "socials"
+            "links"
+            "button"
+            "corp";
+
+        &__links{
+            justify-self: stretch;
+            grid-area: links;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            row-gap: 0.625rem;
+            height: 100%;
+        }
+
+        &__links, &__logo, &__btn, &__corp{
+            justify-self: center;
+            align-self: center;
+            text-align: center;
+        }
+
+        .social-media{
+            justify-content: center;
+        }
+    }   
+
+    @media screen and (max-width: 374px){
+        padding: 2.5rem 0;
+    }
+}
+
+.social-media{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: socials;
+
+    &__item{
+        margin-right: 1rem;
+
+        &:nth-child(1){
+            .social-media__img{
+                background-image: url("../images/social-media/icon-facebook.svg");
+            }
+
+            &:hover{
+                .social-media__img{
+                    background-image: url("../images/social-media/icon-facebook-lime-green.svg");
+                }
+            }
+        }
+
+        &:nth-child(2){
+            .social-media__img{
+                background-image: url("../images/social-media/icon-youtube.svg");
+            }
+
+            &:hover{
+                .social-media__img{
+                    background-image: url("../images/social-media/icon-youtube-lime-green.svg");
+                }
+            }
+        }
+
+        &:nth-child(3){
+            .social-media__img{
+                background-image: url("../images/social-media/icon-twitter.svg");
+            }
+
+            &:hover{
+                .social-media__img{
+                    background-image: url("../images/social-media/icon-twitter-lime-green.svg");
+                }
+            }
+        }
+
+        &:nth-child(4){
+            .social-media__img{
+                background-image: url("../images/social-media/icon-pinterest.svg");
+            }
+
+            &:hover{
+                .social-media__img{
+                    background-image: url("../images/social-media/icon-pinterest-lime-green.svg");
+                }
+            }
+        }
+
+        &:nth-child(5){
+            margin-right: 0;
+
+            .social-media__img{
+                background-image: url("../images/social-media/icon-instagram.svg");
+            }
+
+            &:hover{
+                .social-media__img{
+                    background-image: url("../images/social-media/icon-instagram-lime-green.svg");
+                }
+            }
+        }
+    }
+    
+    &__img{
+        width: 1.5rem;
+        height: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+.attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+
+    a {
+        color: $blue;
+    }
+}

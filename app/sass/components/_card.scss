@@ -1,0 +1,65 @@
+.card{
+    opacity: 0;
+    &--about{
+     max-width: 16.25rem;
+    }
+     &--blog{
+        background: $white;
+        border-radius: 0.25rem;
+        max-width: 16.25rem;
+        a{
+            color: $dark-blue;
+        }
+
+        &:hover a{
+            color: $lime-green;
+        }
+    }
+
+    &__img{
+        &--about{
+            margin-bottom: 2.5rem;
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+    }
+     
+    &__title{
+        &--about{
+            margin-bottom: 1.25rem;
+        }
+        &--blog{
+            margin-bottom: 0.625rem;
+        }
+    }
+ 
+    &__description{
+        &--about, &--blog{
+            font-size: 1rem;
+            line-height: 1.625rem;
+            letter-spacing: -0.015rem;
+        }
+
+        &--blog{
+            margin-bottom: 0.625rem;
+        }
+    }
+
+    &__author{
+        font-size: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+    @media screen and (max-width: 1439px){
+       justify-self: center;
+    
+        &--about{
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 767px){
+       &--about, &--blog{
+           width: 15.9375rem;
+       }
+    }
+ }

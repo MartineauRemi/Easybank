@@ -1,0 +1,61 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+body{
+    font-size: 1rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+button{
+    outline: none;
+}
+
+p{
+    color: $grayish-blue;
+    font-size: 1.125rem;
+    font-weight: $font-weight-md;
+    line-height: 1.75rem;
+    letter-spacing: -0.0175rem;
+
+    @media screen and (max-width: 768px){
+        font-size: 0.9375rem;
+        line-height: 1.5rem;
+    }
+}
+
+h1, h2, h3{
+    color: $dark-blue;
+}
+
+h1{
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: $font-weight-sm;
+
+    @media screen and (max-width: 768px){
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: $font-weight-sm;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: $font-weight-md;
+}

@@ -1,0 +1,23 @@
+.btn{
+    &--request-invite{
+        background: linear-gradient(90deg, $lime-green, $bright-cyan);
+        border: none;
+        border-radius: 3.125rem;
+        padding: 1rem 2rem;
+        color: $white;
+        cursor: pointer;
+        position: relative;
+
+        &:hover::after{
+            content:"";
+            width: 100%;
+            height: 100%;
+            border-radius: 3.125rem;
+            background-color: $white;
+            opacity: 0.3;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
